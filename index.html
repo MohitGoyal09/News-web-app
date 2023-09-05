@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="news-logo">
+                <img src="news-logo.jpg" alt="news-logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-links nav-item" id="sports" >Sports</li>
+                    <li class="hover-links nav-item" id="Politcs" >Politcs</li>
+                    <li class="hover-links nav-item" id="Finance">Finance</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-text" type="text" placeholder="eg.Space">
+                <button class="search-button" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </nav>
+    
+        <main>
+            <div class="cards-container container flex" id="cards-container">
+               
+          </div>
+        </main>
+        <template id="template-news-card">
+            <!-- First News Card -->
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                    <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                        saepe
+                        quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+                </div>
+            </div>
+            
+            <!-- Add more news cards here -->
+      
+
+        </template>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
